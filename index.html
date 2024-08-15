@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgriInnovate Dashboard</title>
+    <link rel="stylesheet" href="agri.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="0e-D-d7wRDSqaZIoc9YgzA.jpg" alt="AgriTech Solutions Logo">
+            <h1>AgriTech Solutions</h1>
+        </div>
+        <nav>
+            <a href="#" class="icon-button"><img src="585e4bf3cb11b227491c339a.jpg" alt="User"></a>
+            <a href="#" class="icon-button"><img src="not.jpg" alt="Notifications"></a>
+            <a href="#" class="icon-button"><img src="Settings-PNG0.webp" alt="Settings"></a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="initial-data">
+            <h2>Initial Data</h2>
+            <form id="initial-data-form">
+                <input type="text" placeholder="Crop Type" required>
+                <input type="text" placeholder="Planting Area" required>
+                <input type="text" placeholder="Farmer's Name" required>
+                <button type="submit">Next</button>
+            </form>
+        </section>
+
+        <section id="data-collection">
+            <h2>Data Collection</h2>
+            <div class="data-sources">
+                <div class="data-source">
+                    <h3>Soil Sensors</h3>
+                    <p>Gather data on moisture, pH, and nutrients</p>
+                    <img src="soilsensor-ezgif.com-webp-to-jpg-converter.jpg" alt="Soil Sensor">
+                    <button>Select</button>
+                </div>
+                <div class="data-source">
+                    <h3>Weather Station</h3>
+                    <p>Collect real-time weather data</p>
+                    <img src="ws.jpg" alt="Weather Station">
+                    <button>Select</button>
+                </div>
+                <div class="data-source">
+                    <h3>Drones</h3>
+                    <p>Monitor crop health using aerial views</p>
+                    <img src="image-ezgif.com-webp-to-jpg-converter.jpg" alt="Drone">
+                    <button>Select</button>
+                </div>
+                <div class="data-source">
+                    <h3>Market Database</h3>
+                    <p>Access real-time market price information</p>
+                    <img src="1f6270f705c9476fabd128579598d0a1.jpg" alt="Market Database">
+                    <button>Select</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="data-transmission">
+            <h2>Data Transmission</h2>
+            <div class="transmission-options">
+                <div class="option">
+                    <img src="09f7eadde9e043f2a26bf4ef769b75f1.jpg" alt="Cloud">
+                    <p>Data sent to central server</p>
+                </div>
+                <div class="option">
+                    <img src="412136464524497facbf76f3852f7b5c.jpg" alt="Network">
+                    <p>Data transmission over network</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="data-analysis">
+            <h2>Data Analysis</h2>
+            <div class="analysis-options">
+                <label>
+                    <input type="checkbox" name="predictive-analytics">
+                    Predictive Analytics
+                </label>
+                <label>
+                    <input type="checkbox" name="decision-support">
+                    Decision Support
+                </label>
+            </div>
+            <div id="chart-container">
+                <canvas id="dataChart"></canvas>
+            </div>
+        </section>
+
+        <button id="final-submit">Next</button>
+    </main>
+
+    <script src="agri.js"></script>
+</body>
+</html>
